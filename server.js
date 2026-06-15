@@ -10,6 +10,10 @@ const {
   generatePlaywrightScript
 } = require("./services/scriptGenerator");
 
+const {
+  commitFile
+} = require("./services/githubService");
+
 const app = express();
 app.use(express.json());
 
@@ -336,12 +340,21 @@ app.post("/generate-scripts", async (req, res) => {
     const generatedFiles = [];
 
     for (const test of parsedTests) {
+			if (
+  !test.steps ||
+  !Array.isArray(test.steps) ||
+  test.steps.length === 0
+) {
+  console.log(
+    `Skipping ${test.name} - No steps found`
+  );
+  continue;
+}
 
   console.log(
     `Generating script for ${test.name}`
   );
-
- const script =
+const script =
   await generatePlaywrightScript(test);
 
 const safeRequirementId =
@@ -355,6 +368,22 @@ const fileName =
     .toLowerCase()
     .replace(/-+/g, "-") +
   ".spec.ts";
+
+try {
+
+  await commitFile(
+    fileName,
+    script
+  );
+
+} catch(error) {
+
+  console.error(
+    `GitHub commit failed for ${fileName}`,
+    error.message
+  );
+
+}
 
 const savedPath =
   saveScript(fileName, script);
