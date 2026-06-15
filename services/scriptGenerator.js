@@ -58,24 +58,34 @@ ${s.result}
 async function generatePlaywrightScript(testCase) {
 
   const prompt = buildPrompt(testCase);
+try {
 
-  const response = await client.chat.completions.create({
-    model: "gpt-5",
-    messages: [
-      {
-        role: "system",
-        content:
-          "You are a senior Playwright automation engineer."
-      },
-      {
-        role: "user",
-        content: prompt
-      }
-    ],
-    temperature: 0.2
-  });
+  const response =
+    await client.chat.completions.create({
+      model: "gpt-5",
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a senior Playwright automation engineer."
+        },
+        {
+          role: "user",
+          content: prompt
+        }
+      ]
+    });
 
   return response.choices[0].message.content;
+
+} catch (error) {
+
+  console.error(
+    "OpenAI Error:",
+    error.response?.data || error.message
+  );
+
+  throw error;
 }
 
 module.exports = {
