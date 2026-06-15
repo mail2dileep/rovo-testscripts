@@ -87,6 +87,7 @@ try {
 
   throw error;
 }
+}
 
 module.exports = {
   generatePlaywrightScript
