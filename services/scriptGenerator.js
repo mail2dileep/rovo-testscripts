@@ -9,13 +9,20 @@ function buildPrompt(test) {
   let prompt = `
 You are AssureRegress.
 
-Generate a Playwright Javascript automation script.
+Generate a production-ready Playwright Javascript test.
 
-Rules:
+Requirements:
 - Use @playwright/test
-- Generate complete runnable code
-- Use assertions based on expected results
-- Return ONLY code
+- Generate complete executable code
+- Generate one test for the supplied test case
+- Use Page Object Model where appropriate
+- Create assertions based on expected results
+- Use test.describe and test()
+- Return ONLY executable code
+- Do not return markdown code fences
+
+Requirement ID:
+${test.requirementId}
 
 Test Name:
 ${test.name}
@@ -23,15 +30,23 @@ ${test.name}
 Objective:
 ${test.objective}
 
-Steps:
+Priority:
+${test.priority}
+
+Test Steps:
 `;
 
   test.steps.forEach((s, index) => {
 
     prompt += `
-${index + 1}. ${s.step}
+Step ${index + 1}
+Action:
+${s.step}
 
-Expected:
+Input Data:
+${s.data || "N/A"}
+
+Expected Result:
 ${s.result}
 `;
 

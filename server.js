@@ -4,6 +4,9 @@ const axios = require("axios");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const {
+  saveScript
+} = require("./services/fileWriter");
+const {
   generatePlaywrightScript
 } = require("./services/scriptGenerator");
 
@@ -334,23 +337,36 @@ app.post("/generate-scripts", async (req, res) => {
 
     for (const test of parsedTests) {
 
-      console.log(
-        `Generating script for ${test.name}`
-      );
+  console.log(
+    `Generating script for ${test.name}`
+  );
 
-      const script =
-        await generatePlaywrightScript(test);
+ const script =
+  await generatePlaywrightScript(test);
 
-      generatedFiles.push({
-        testName: test.name,
-        fileName:
-          test.name
-            .replace(/[^a-zA-Z0-9]/g, "-")
-            .toLowerCase() +
-          ".spec.ts",
-        content: script
-      });
-    }
+const safeRequirementId =
+  (test.requirementId || "UNKNOWN")
+    .replace(/[^a-zA-Z0-9-]/g, "");
+
+const fileName =
+  `${safeRequirementId}-` +
+  test.name
+    .replace(/[^a-zA-Z0-9]/g, "-")
+    .toLowerCase()
+    .replace(/-+/g, "-") +
+  ".spec.ts";
+
+const savedPath =
+  saveScript(fileName, script);
+
+generatedFiles.push({
+  testName: test.name,
+  fileName,
+  savedPath,
+  content: script
+});
+
+}
 
     res.json({
       success: true,
@@ -362,7 +378,7 @@ app.post("/generate-scripts", async (req, res) => {
     console.error(error);
 
     res.status(500).json({
-      error: error.message
+      error: error.message	
     });
 
   }
