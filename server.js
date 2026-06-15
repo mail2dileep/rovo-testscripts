@@ -335,94 +335,122 @@ app.post("/create-tests", async (req, res) => {
 });
 app.post("/generate-scripts", async (req, res) => {
 
-  try {
+  const { tests } = req.body;
 
-    const { tests } = req.body;
+  if (!tests) {
+    return res.status(400).json({
+      error: "No tests received"
+    });
+  }
 
-    if (!tests) {
-      return res.status(400).json({
-        error: "No tests received"
-      });
+  const parsedTests =
+    typeof tests === "string"
+      ? JSON.parse(tests)
+      : tests;
+
+  // Respond immediately to Rovo
+  res.status(202).json({
+    success: true,
+    message:
+      "AssureRegress accepted the request. Script generation started.",
+    storyId:
+      parsedTests[0]?.requirementId
+  });
+
+  // Continue processing in background
+  setImmediate(async () => {
+
+    try {
+
+      const generatedFiles = [];
+
+      for (const test of parsedTests) {
+
+        if (
+          !test.steps ||
+          !Array.isArray(test.steps) ||
+          test.steps.length === 0
+        ) {
+
+          console.log(
+            `Skipping ${test.name} - No steps found`
+          );
+
+          continue;
+        }
+
+        console.log(
+          `Generating script for ${test.name}`
+        );
+
+        const script =
+          await generatePlaywrightScript(test);
+
+        const safeRequirementId =
+          (test.requirementId || "UNKNOWN")
+            .replace(/[^a-zA-Z0-9-]/g, "");
+
+        const fileName =
+          `${safeRequirementId}-` +
+          test.name
+            .replace(/[^a-zA-Z0-9]/g, "-")
+            .toLowerCase()
+            .replace(/-+/g, "-") +
+          ".spec.ts";
+
+        try {
+
+          await commitFile(
+            fileName,
+            script
+          );
+
+          console.log(
+            `✅ Successfully committed ${fileName}`
+          );
+
+        } catch(error) {
+
+          console.error(
+            `GitHub commit failed for ${fileName}`,
+            error
+          );
+
+        }
+
+        const savedPath =
+          saveScript(
+            fileName,
+            script
+          );
+
+        generatedFiles.push({
+          testName: test.name,
+          fileName,
+          savedPath
+        });
+
+      }
+
+      console.log(`
+===================================
+AssureRegress Generation Summary
+===================================
+Story: ${parsedTests[0]?.requirementId}
+Generated: ${generatedFiles.length}
+===================================
+`);
+
+    } catch (error) {
+
+      console.error(
+        "AssureRegress background processing failed:",
+        error
+      );
+
     }
 
-    const parsedTests =
-      typeof tests === "string"
-        ? JSON.parse(tests)
-        : tests;
-
-    const generatedFiles = [];
-
-    for (const test of parsedTests) {
-			if (
-  !test.steps ||
-  !Array.isArray(test.steps) ||
-  test.steps.length === 0
-) {
-  console.log(
-    `Skipping ${test.name} - No steps found`
-  );
-  continue;
-}
-
-  console.log(
-    `Generating script for ${test.name}`
-  );
-const script =
-  await generatePlaywrightScript(test);
-
-const safeRequirementId =
-  (test.requirementId || "UNKNOWN")
-    .replace(/[^a-zA-Z0-9-]/g, "");
-
-const fileName =
-  `${safeRequirementId}-` +
-  test.name
-    .replace(/[^a-zA-Z0-9]/g, "-")
-    .toLowerCase()
-    .replace(/-+/g, "-") +
-  ".spec.ts";
-
-try {
-
-  await commitFile(
-    fileName,
-    script
-  );
-
-} catch(error) {
-
-  console.error(
-    `GitHub commit failed for ${fileName}`,
-    );
-
-}
-
-const savedPath =
-  saveScript(fileName, script);
-
-generatedFiles.push({
-  testName: test.name,
-  fileName,
-  savedPath,
-  content: script
-});
-
-}
-
-    res.json({
-      success: true,
-      generatedFiles
-    });
-
-  } catch (error) {
-
-    console.error(error);
-
-    res.status(500).json({
-      error: error.message	
-    });
-
-  }
+  });
 
 });
 
