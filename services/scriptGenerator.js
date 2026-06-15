@@ -7,19 +7,57 @@ const client = new OpenAI({
 function buildPrompt(test) {
 
   let prompt = `
-You are AssureRegress.
+You are AssureRegress, a Senior QA Automation Architect.
 
-Generate a production-ready Playwright Javascript test.
+Generate enterprise-grade Playwright TypeScript automation following strict Page Object Model (POM) architecture.
 
-Requirements:
-- Use @playwright/test
-- Generate complete executable code
-- Generate one test for the supplied test case
-- Use Page Object Model where appropriate
-- Create assertions based on expected results
-- Use test.describe and test()
-- Return ONLY executable code
-- Do not return markdown code fences
+MANDATORY REQUIREMENTS:
+
+- Use Playwright with @playwright/test
+- Use TypeScript
+- Follow Page Object Model (POM)
+- Generate TWO artifacts:
+  1. Page Object Class
+  2. Playwright Test Spec
+
+Page Object Requirements:
+- Create a dedicated Page Object class
+- Encapsulate all locators inside the Page Object
+- Encapsulate all actions inside the Page Object
+- Do NOT use page.locator(), page.click(), page.fill(), page.getByRole(), etc. directly in the test spec
+- Use meaningful method names
+
+Test Spec Requirements:
+- Use test.describe()
+- Use test()
+- Instantiate Page Objects
+- Use Page Object methods only
+- Keep assertions in the test layer
+- Follow reusable enterprise automation framework patterns
+
+Framework Structure:
+
+pages/
+  <PageName>Page.ts
+
+tests/generated/
+  <TestName>.spec.ts
+
+Return ONLY valid JSON.
+
+Response Format:
+
+{
+  "pageObjectFileName": "<PageName>Page.ts",
+  "pageObjectContent": "<full page object code>",
+  "testFileName": "<test-name>.spec.ts",
+  "testFileContent": "<full playwright test code>"
+}
+
+Do NOT return markdown.
+Do NOT return code fences.
+Do NOT return explanations.
+Return JSON only.
 
 Requirement ID:
 ${test.requirementId}
@@ -40,6 +78,7 @@ Test Steps:
 
     prompt += `
 Step ${index + 1}
+
 Action:
 ${s.step}
 
