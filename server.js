@@ -385,6 +385,9 @@ app.post("/generate-scripts", async (req, res) => {
 
         const script =
           await generatePlaywrightScript(test);
+		  console.log(
+  `✅ Script generated for ${test.name}`
+);
 
         const safeRequirementId =
           (test.requirementId || "UNKNOWN")
@@ -399,6 +402,9 @@ app.post("/generate-scripts", async (req, res) => {
           ".spec.ts";
 
         try {
+			console.log(
+  `Committing ${fileName} to GitHub`
+);
 
           await commitFile(
             fileName,
@@ -440,6 +446,9 @@ Story: ${parsedTests[0]?.requirementId}
 Generated: ${generatedFiles.length}
 ===================================
 `);
+console.log(
+  `🎉 ALL PLAYWRIGHT SCRIPTS GENERATED SUCCESSFULLY FOR STORY ${parsedTests[0]?.requirementId}`
+);
 
     } catch (error) {
 
