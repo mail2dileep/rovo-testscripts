@@ -10,9 +10,22 @@ const {
   generatePlaywrightScript
 } = require("./services/scriptGenerator");
 
+const githubService =
+  require("./services/githubService");
+
+console.log(
+  "GitHub Service:",
+  githubService
+);
+
+console.log(
+  "commitFile type:",
+  typeof githubService.commitFile
+);
+
 const {
   commitFile
-} = require("./services/githubService");
+} = githubService;
 
 const app = express();
 app.use(express.json());
@@ -380,8 +393,7 @@ try {
 
   console.error(
     `GitHub commit failed for ${fileName}`,
-    error.message
-  );
+    );
 
 }
 
