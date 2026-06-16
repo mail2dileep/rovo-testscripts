@@ -383,58 +383,80 @@ app.post("/generate-scripts", async (req, res) => {
           `Generating script for ${test.name}`
         );
 
-        const script =
-          await generatePlaywrightScript(test);
-		  console.log(
-  `✅ Script generated for ${test.name}`
+        const generated =
+  await generatePlaywrightScript(test);
+
+console.log(
+  `✅ POM artifacts generated for ${test.name}`
 );
 
-        const safeRequirementId =
-          (test.requirementId || "UNKNOWN")
-            .replace(/[^a-zA-Z0-9-]/g, "");
+        // const safeRequirementId =
+        //   (test.requirementId || "UNKNOWN")
+        //     .replace(/[^a-zA-Z0-9-]/g, "");
 
-        const fileName =
-          `${safeRequirementId}-` +
-          test.name
-            .replace(/[^a-zA-Z0-9]/g, "-")
-            .toLowerCase()
-            .replace(/-+/g, "-") +
-          ".spec.ts";
+        // const fileName =
+        //   `${safeRequirementId}-` +
+        //   test.name
+        //     .replace(/[^a-zA-Z0-9]/g, "-")
+        //     .toLowerCase()
+        //     .replace(/-+/g, "-") +
+        //   ".spec.ts";
 
         try {
 			console.log(
-  `Committing ${fileName} to GitHub`
+  `Committing POM artifacts for ${test.name}`
 );
 
-          await commitFile(
-            fileName,
-            script
-          );
+        await commitFile(
+  `pages/${generated.pageObjectFileName}`,
+  generated.pageObjectContent
+);
+
+console.log(
+  `✅ Page Object committed: ${generated.pageObjectFileName}`
+);
+
+await commitFile(
+  `tests/generated/${generated.testFileName}`,
+  generated.testFileContent
+);
+
+console.log(
+  `✅ Test Spec committed: ${generated.testFileName}`
+);
 
           console.log(
-            `✅ Successfully committed ${fileName}`
-          );
+  `✅ Successfully committed POM artifacts for ${test.name}`
+);
 
         } catch(error) {
 
           console.error(
-            `GitHub commit failed for ${fileName}`,
-            error
-          );
+  `GitHub commit failed for ${test.name}`,
+  error
+);
 
         }
 
-        const savedPath =
-          saveScript(
-            fileName,
-            script
-          );
+       const pageObjectPath =
+  saveScript(
+    generated.pageObjectFileName,
+    generated.pageObjectContent
+  );
+
+const testSpecPath =
+  saveScript(
+    generated.testFileName,
+    generated.testFileContent
+  );
 
         generatedFiles.push({
-          testName: test.name,
-          fileName,
-          savedPath
-        });
+  testName: test.name,
+  pageObjectFile:
+    generated.pageObjectFileName,
+  testSpecFile:
+    generated.testFileName
+});
 
       }
 

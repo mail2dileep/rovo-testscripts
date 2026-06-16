@@ -22,12 +22,12 @@ async function commitFile(
       .toString("base64");
 
   const url =
-    `https://api.github.com/repos/${owner}/${repo}/contents/tests/generated/${fileName}`;
+    `https://api.github.com/repos/${owner}/${repo}/contents/${fileName}`;
 
   await axios.put(
     url,
     {
-      message:
+      message:  
         `AssureRegress generated ${fileName}`,
       content: encodedContent,
       branch
