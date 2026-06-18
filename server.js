@@ -384,7 +384,10 @@ app.post("/generate-scripts", async (req, res) => {
         );
 
         const generated =
-  await generatePlaywrightScript(test);
+  await generatePlaywrightScript(
+  test,
+  locatorCatalog
+);
 
 console.log(
   `✅ POM artifacts generated for ${test.name}`

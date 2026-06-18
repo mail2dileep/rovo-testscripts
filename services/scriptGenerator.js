@@ -4,7 +4,24 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-function buildPrompt(test) {
+
+
+function buildPrompt(test, locatorCatalog) {
+
+ const elements =
+  Array.isArray(locatorCatalog)
+    ? locatorCatalog
+    : locatorCatalog?.elements || [];
+
+const filteredLocators =
+  elements
+    .filter(el =>
+      el.testId ||
+      el.id ||
+      el.ariaLabel ||
+      el.text
+    )
+    .slice(0, 100);
 
   let prompt = `
 You are AssureRegress, a Senior QA Automation Architect.
@@ -20,6 +37,7 @@ MANDATORY REQUIREMENTS:
   1. Page Object Class
   2. Playwright Test Spec
 
+
 Page Object Requirements:
 - Create a dedicated Page Object class
 - Encapsulate all locators inside the Page Object
@@ -34,6 +52,7 @@ Test Spec Requirements:
 - Use Page Object methods only
 - Keep assertions in the test layer
 - Follow reusable enterprise automation framework patterns
+
 
 Framework Structure:
 
@@ -66,7 +85,77 @@ verify-rate-calculator.spec.ts
 Do NOT return markdown.
 Do NOT return code fences.
 Do NOT return explanations.
-Return JSON only.
+Return JSON only.`;
+prompt += `
+
+PAGE ANALYSIS RESULTS
+
+The following locators were extracted
+from the application page.
+
+Use ONLY these locators when
+generating the Page Object.
+
+Prefer locator priority:
+
+1. data-testid
+2. aria-label
+3. id
+4. role
+5. text
+
+Do NOT invent selectors.
+
+Locator Catalog:
+
+${filteredLocators.length === 0
+  ? "No locators were discovered. Add TODO comments for missing locators."
+  : JSON.stringify(filteredLocators, null, 2)
+}
+
+
+LOCATOR RULES
+
+- Use locators from Locator Catalog.
+- Match test step action verbs (click, enter, select, verify, submit) to the most appropriate element in the Locator Catalog.
+- Match expected results with relevant page elements where applicable.
+- Do not generate placeholder selectors.
+- Do not invent CSS selectors.
+- Prefer locator generation in this order:
+
+1. page.getByTestId()
+2. page.getByRole()
+3. page.getByLabel()
+4. page.locator('#id')
+5. page.getByText()
+
+- Avoid XPath unless absolutely necessary.
+- If multiple locators match, prefer the most stable locator according to the locator priority order.
+
+- If data-testid is unavailable use getByRole().
+- If role is unavailable use id locator.
+- Use the most relevant locator from the catalog based on the action being performed.
+- If no matching locator exists add:
+
+// TODO: Locator not found in catalog
+
+PAGE OBJECT DESIGN RULES
+
+- Group related locators into business actions.
+- Create reusable methods.
+- Avoid one method per locator.
+- Methods should represent business actions rather than UI actions.
+- Prefer reusable workflow methods over atomic click/fill methods.
+
+POM ENFORCEMENT
+
+- All locators must exist only in the Page Object.
+- All page interactions must exist only in the Page Object.
+- Test Spec must call Page Object methods only.
+- Test Spec must not contain page.locator(), page.getByTestId(), page.getByRole(), page.fill(), page.click().
+- Import Page Objects into the test spec using relative imports.
+- Generate compilable TypeScript.
+
 
 Requirement ID:
 ${test.requirementId}
@@ -103,9 +192,9 @@ ${s.result}
   return prompt;
 }
 
-async function generatePlaywrightScript(testCase) {
+async function generatePlaywrightScript(testCase,locatorCatalog) {
 
-  const prompt = buildPrompt(testCase);
+  const prompt = buildPrompt(testCase,locatorCatalog);
 try {
 
   const response =
@@ -131,12 +220,25 @@ let parsed;
 
 try {
 
-  parsed = JSON.parse(content);
+  const cleanedContent =
+  content
+    .replace(/```json/g, "")
+    .replace(/```/g, "")
+    .trim();
+
+parsed =
+  JSON.parse(cleanedContent);
   parsed.pageObjectFileName =
   parsed.pageObjectFileName?.trim();
 
 parsed.testFileName =
   parsed.testFileName?.trim();
+
+  parsed.pageObjectContent =
+  parsed.pageObjectContent?.trim();
+
+parsed.testFileContent =
+  parsed.testFileContent?.trim();
 
 } catch(error) {
 
@@ -182,7 +284,21 @@ if (
   );
 
 }
+if (
+  !parsed.pageObjectContent.includes("class")
+) {
+  throw new Error(
+    "Invalid Page Object generated"
+  );
+}
 
+if (
+  !parsed.testFileContent.includes("@playwright/test")
+) {
+  throw new Error(
+    "Invalid Playwright test generated"
+  );
+}
 return parsed;
 
 } catch (error) {
