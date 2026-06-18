@@ -1,0 +1,2419 @@
+{
+  "pageTitle": "Bill Estimator - Residential",
+  "url": "https://www.cpsenergy.com/content/corporate/en/my-home/savings-programs/rate_estimator_residential.html",
+  "extractedAt": "2026-06-18T13:31:20.865Z",
+  "elements": [
+    {
+      "tag": "a",
+      "text": "Skip to main content",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Skip to main content')"
+    },
+    {
+      "tag": "a",
+      "text": "\n         ",
+      "id": "cq-gen43",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#cq-gen43')"
+    },
+    {
+      "tag": "button",
+      "text": "\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t",
+      "id": null,
+      "role": null,
+      "ariaLabel": "Search",
+      "testId": null,
+      "recommendedLocator": "getByLabel('Search')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "Español",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Español')"
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": "Menu",
+      "testId": null,
+      "recommendedLocator": "getByLabel('Menu')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "×Close",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('×Close')"
+    },
+    {
+      "tag": "a",
+      "text": "210-353-4357",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('210-353-4357')"
+    },
+    {
+      "tag": "a",
+      "text": "210-353-2222",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('210-353-2222')"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": "cq-gen43",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#cq-gen43')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "Español",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Español')"
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contact Us')"
+    },
+    {
+      "tag": "a",
+      "text": "Manage My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Manage My Account')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaBasePath",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaBasePath')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaLoginpath",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaLoginpath')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaAvailability",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaAvailability')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "username",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#username')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "password",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#password')"
+    },
+    {
+      "tag": "button",
+      "text": "Log In",
+      "id": "mmalgbtn",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Log In')"
+    },
+    {
+      "tag": "a",
+      "text": "Enroll My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Enroll My Account')"
+    },
+    {
+      "tag": "a",
+      "text": "Forgot Password?",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Forgot Password?')"
+    },
+    {
+      "tag": "a",
+      "text": "Log out of Manage My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Log out of Manage My Account')"
+    },
+    {
+      "tag": "a",
+      "text": "Return To MMA\n                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Return To MMA')"
+    },
+    {
+      "tag": "a",
+      "text": "Ways to Pay",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Ways to Pay')"
+    },
+    {
+      "tag": "a",
+      "text": "Customer Assistance Programs",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Customer Assistance Programs')"
+    },
+    {
+      "tag": "a",
+      "text": "Reconnect My Services",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Reconnect My Services')"
+    },
+    {
+      "tag": "a",
+      "text": "Understand My Bill",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Understand My Bill')"
+    },
+    {
+      "tag": "a",
+      "text": "Outage Center",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Outage Center')"
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contact Us')"
+    },
+    {
+      "tag": "button",
+      "text": "My Home ",
+      "id": "my-home",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    My Home\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Savings Programs & Energy Tips\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Savings Programs & Energy Tips",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Savings Programs & Energy Tips')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Bill Estimator - Residential\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Bill Estimator - Residential')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Energy Cost Calculator\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Energy Cost Calculator')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Energy Saving Tips\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Energy Saving Tips')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Request Services for My Home\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Request Services for My Home",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Request Services for My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Doing Business with Us\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Doing Business with Us",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Doing Business with Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Moving\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Moving",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Moving')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Safety Around My Home\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Safety Around My Home",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Safety Around My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Payment and Assistance Programs\n                                    \n                                    New\n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Payment and Assistance Programs\n                                    \n                                    New')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            I Need Help with Payments\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('I Need Help with Payments')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            I Need Help with Weatherization\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('I Need Help with Weatherization')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            I Need Extra Time to Make Payments\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('I Need Extra Time to Make Payments')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            I Need Help Due to Special Circumstances\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('I Need Help Due to Special Circumstances')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Sustainable Tomorrow Energy Plan (STEP)\n                                    \n                                    New\n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sustainable Tomorrow Energy Plan (STEP)\n                                    \n                                    New')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Home Efficiency Rebates\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Home Efficiency Rebates')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Home Services\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Home Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Solar\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Solar')"
+    },
+    {
+      "tag": "button",
+      "text": "My Business ",
+      "id": "my-business",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    My Business\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    My Business Energy Portal\n                                    \n                                    New\n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " My Business Energy Portal",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' My Business Energy Portal')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Bill Estimator - Small Commercial\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Bill Estimator - Small Commercial",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Bill Estimator - Small Commercial')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Request Services for My Business\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Request Services for My Business",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Request Services for My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Request a Meter Can\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Request a Meter Can')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            School Pipe Testing\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('School Pipe Testing')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Commercial Power Quality FAQs\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Commercial Power Quality FAQs')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Manage My Properties\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Manage My Properties')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Property Manager FAQs\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Property Manager FAQs')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Energy2Business (E2B) Team\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Energy2Business (E2B) Team')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Community Partnerships\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Community Partnerships')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Sustainable Tomorrow Energy Plan (STEP)\n                                    \n                                    New\n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sustainable Tomorrow Energy Plan (STEP)\n                                    \n                                    New')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Rebates & Services\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Rebates & Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Demand Response\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Demand Response')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Solar\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Solar')"
+    },
+    {
+      "tag": "button",
+      "text": "Construction & Renovation ",
+      "id": "construction-and-renovation",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Construction & Renovation')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    Construction & Renovation\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Construction & Renovation')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Large Load Customer Growth\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Large Load Customer Growth",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Large Load Customer Growth')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Step-by-Step Processes\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Step-by-Step Processes",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Step-by-Step Processes')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            New Home Construction Underground Service\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('New Home Construction Underground Service')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Multi-Family Buildings\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Multi-Family Buildings')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            New Home Construction Overhead Service\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('New Home Construction Overhead Service')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            New Commercial Construction\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('New Commercial Construction')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Home Renovation                              \n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Home Renovation')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Commercial Building Renovation\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Commercial Building Renovation')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Residential Subdivision Development\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Residential Subdivision Development')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Removal of Service\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Removal of Service')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Construction & Renovation Web Portal\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Construction & Renovation Web Portal",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Construction & Renovation Web Portal')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Online Tools and Information\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Online Tools and Information')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Start a New Project\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Start a New Project')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Service Applications\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Service Applications')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Track an Existing Request (no login needed)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Track an Existing Request (no login needed)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Pay an Invoice (no login needed)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Pay an Invoice (no login needed)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Construction Drawings Search\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Construction Drawings Search')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Distribution Electric Material Specifications Search\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Distribution Electric Material Specifications Search')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Electric Service Standards (Size 8.5 x 11)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Electric Service Standards (Size 8.5 x 11)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Electric Service Standards (Size 5.5 x 8.5)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Electric Service Standards (Size 5.5 x 8.5)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Gas Service Standards\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Gas Service Standards')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Distributed Generation\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Distributed Generation')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    All Night Security Lights (ANSL) Request\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('All Night Security Lights (ANSL) Request')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Pole Attachment Services\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Pole Attachment Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Joint Trench Program\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Joint Trench Program')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Alternative Residential Meter Sockets\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Alternative Residential Meter Sockets')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Customer Construction Cost \n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Customer Construction Cost')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Underground Strategy\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Underground Strategy')"
+    },
+    {
+      "tag": "button",
+      "text": "Work With Us ",
+      "id": "work-with-us",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Work With Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    Work With Us\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Work With Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Procurement & Suppliers (Bids)\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Procurement & Suppliers (Bids)",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Procurement & Suppliers (Bids)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Bid Opportunities\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Bid Opportunities')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Register as a Supplier\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Register as a Supplier')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Economic Development\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Economic Development')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Materials Management\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Materials Management')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Contract Services\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contract Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Career Center (Jobs)\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Career Center (Jobs)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Benefits Overview (Employee & Retiree)\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Benefits Overview (Employee & Retiree)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Employee Benefits Overview\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Employee Benefits Overview')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Retiree Benefits Overview\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Retiree Benefits Overview')"
+    },
+    {
+      "tag": "button",
+      "text": "Customer Support ",
+      "id": "customer-support",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Customer Support')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    Customer Support\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Customer Support')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Manage My Account (MMA)\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Manage My Account (MMA)",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Manage My Account (MMA)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    My Energy Portal\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " My Energy Portal",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' My Energy Portal')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Critical Load\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Critical Load",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Critical Load')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Outage Center\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Outage Center",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Outage Center')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Energy Conservation Levels\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Energy Conservation Levels')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Sign Up for CPS Energy Alerts\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sign Up for CPS Energy Alerts')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            What Should You Do During a Power Outage?\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('What Should You Do During a Power Outage?')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Outage Causes\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Outage Causes')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Outage Tips\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Outage Tips')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Request Services for My Home\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Request Services for My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Request Services for My Business\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Request Services for My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Contact Us\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contact Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Appointments & Wait Times\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Appointments & Wait Times')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Schedule a call back\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Schedule a call back')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Ways to Pay My Bill\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Ways to Pay My Bill')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Service Center Locations\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Service Center Locations')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Reconnection of Service (Self-Serve)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Reconnection of Service (Self-Serve)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Understanding Your CPS Energy Bill\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Understanding Your CPS Energy Bill')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Automatic Payments\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Automatic Payments')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Temporary Hardships\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Temporary Hardships')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Emergency Assistance Programs\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Emergency Assistance Programs')"
+    },
+    {
+      "tag": "button",
+      "text": "About Us ",
+      "id": "about-us",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('About Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                    About Us\n                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('About Us')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Horizon 2050\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Horizon 2050",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Horizon 2050')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Knowledge is Power\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Knowledge is Power",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Knowledge is Power')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Energizing Progress Together\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Energizing Progress Together",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Energizing Progress Together')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    CPS Energy Vision 2027\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " CPS Energy Vision 2027",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' CPS Energy Vision 2027')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Progress Toward Vision 2027\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Progress Toward Vision 2027')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Rate Request\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Rate Request",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Rate Request')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Environment, Climate & Sustainability\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Environment, Climate & Sustainability",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Environment, Climate & Sustainability')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Newsroom\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Newsroom",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Newsroom')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Customer Terms & Conditions\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Customer Terms & Conditions",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Customer Terms & Conditions')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Programs & Services\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": " Programs & Services",
+      "testId": null,
+      "recommendedLocator": "getByLabel(' Programs & Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Electric Vehicles (EV)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Electric Vehicles (EV)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Sustainable Tomorrow Energy Plan (STEP)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sustainable Tomorrow Energy Plan (STEP)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Our History\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Our History')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Board Meetings & Presentations\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Board Meetings & Presentations')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Community Input Committee (CIC)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Community Input Committee (CIC)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Public Input\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Public Input')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Community Investment\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Community Investment')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Company Financial Information\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Company Financial Information')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Board of Trustees\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Board of Trustees')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Senior Leadership\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Senior Leadership')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            CPS Energy Honors & Awards\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('CPS Energy Honors & Awards')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Rates\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Rates')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Community\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Community')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Upcoming Events\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Upcoming Events')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Give to REAP\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Give to REAP')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            CPS Energy Angels\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('CPS Energy Angels')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Lakes & Parks\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Lakes & Parks')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Teacher & Student Resources\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Teacher & Student Resources')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Road Closures & Infrastructure Projects\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Road Closures & Infrastructure Projects')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                    Overall Safety\n                                    \n                                    \n                                ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Overall Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Beware of Scammers\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Beware of Scammers')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Call 811 Before You Dig\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Call 811 Before You Dig')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Carbon Monoxide Poisoning\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Carbon Monoxide Poisoning')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Copper Theft\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Copper Theft')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Emergency Preparation & Safety Tips\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Emergency Preparation & Safety Tips')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Gas Pilot Lighting\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Gas Pilot Lighting')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Generator Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Generator Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Holiday Home Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Holiday Home Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Let's Prepare! (Winter Preparedness & Safety)\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Let's Prepare! (Winter Preparedness & Safety)')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Mylar Balloon & Kite Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Mylar Balloon & Kite Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Natural Gas Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Natural Gas Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Theft of Service\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Theft of Service')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Tree Trimming Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Tree Trimming Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Underground Transformer Box Safety\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Underground Transformer Box Safety')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Wildfire Safety & Mitigation\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Wildfire Safety & Mitigation')"
+    },
+    {
+      "tag": "button",
+      "text": "Manage My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Manage My Account')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaBasePathMobile",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaBasePathMobile')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaLoginpathMobile",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaLoginpathMobile')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mmaAvailabilityMobile",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mmaAvailabilityMobile')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mobileUsername",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mobileUsername')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "mobilePassword",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#mobilePassword')"
+    },
+    {
+      "tag": "button",
+      "text": "\n                                                    Log In",
+      "id": "mmaMobilelgbtn",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Log In')"
+    },
+    {
+      "tag": "a",
+      "text": "Enroll My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Enroll My Account')"
+    },
+    {
+      "tag": "a",
+      "text": "Forgot Password?",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Forgot Password?')"
+    },
+    {
+      "tag": "a",
+      "text": "Log out of Manage My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Log out of Manage My Account')"
+    },
+    {
+      "tag": "a",
+      "text": "Return To MMA\n                                                    ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Return To MMA')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                Ways to Pay\n                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Ways to Pay')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                Customer Assistance Programs\n                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Customer Assistance Programs')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                Reconnect My Services\n                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Reconnect My Services')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                Understand My Bill\n                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Understand My Bill')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                Outage Center\n                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Outage Center')"
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contact Us')"
+    },
+    {
+      "tag": "a",
+      "text": "Manage My Account (MMA)",
+      "id": null,
+      "role": null,
+      "ariaLabel": "Manage My Account",
+      "testId": null,
+      "recommendedLocator": "getByLabel('Manage My Account')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "errorMsgRateCalc",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#errorMsgRateCalc')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "unitCost",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#unitCost')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "unitCostNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#unitCostNew')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serAvailCharge",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serAvailCharge')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serAvailChargeGas",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serAvailChargeGas')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serAvailChargeNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serAvailChargeNew')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serAvailChargeGasNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serAvailChargeGasNew')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "FuelAdjCharge",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#FuelAdjCharge')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "RegulatoryAdj",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#RegulatoryAdj')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "RegulatoryAdjNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#RegulatoryAdjNew')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "AffDiscount",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#AffDiscount')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "gasunitCost",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#gasunitCost')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "gasunitCostNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#gasunitCostNew')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "peakCapacityCharge",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#peakCapacityCharge')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "peakCapacityChargeNew",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#peakCapacityChargeNew')"
+    },
+    {
+      "tag": "a",
+      "text": "guide to help you read your bill",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('guide to help you read your bill')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serviceType01",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serviceType01')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "serviceType02",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#serviceType02')"
+    },
+    {
+      "tag": "a",
+      "text": "San Antonio city limits",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('San Antonio city limits')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "citylimits01",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#citylimits01')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "citylimits02",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#citylimits02')"
+    },
+    {
+      "tag": "a",
+      "text": "San Antonio city trash pickup",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('San Antonio city trash pickup')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "trashcart01",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#trashcart01')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "trashcart02",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#trashcart02')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "trashcart03",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#trashcart03')"
+    },
+    {
+      "tag": "input",
+      "text": "",
+      "id": "trashcart04",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "locator('#trashcart04')"
+    },
+    {
+      "tag": "select",
+      "text": "250\n500\n750\n1000\n1250\n1500\n1750\n2000\n2250\n2500\n2750\n3000\n3250\n3500",
+      "id": "consumption",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('250\n500\n750\n1000\n1250\n1500\n1750\n2000\n2250\n2500\n2750\n3000\n3250\n3500')"
+    },
+    {
+      "tag": "select",
+      "text": "0\n5\n10\n15\n20\n25\n30\n35\n40\n45\n50",
+      "id": "gasconsumption",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('0\n5\n10\n15\n20\n25\n30\n35\n40\n45\n50')"
+    },
+    {
+      "tag": "select",
+      "text": "\n                                        January\n                                        February\n                                        March\n                                        April\n                                        May\n                                        June\n                                        July\n                                        August\n                                        September\n                                        October\n                                        November\n                                        December\n                                    ",
+      "id": "gMonth1",
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('January\n                                        February\n                                        March\n                                        April\n                                        May\n                                        June\n                                        July\n                                        August\n                                        September\n                                        October\n                                        November\n                                        December')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                            Estimated Rate Increase\n                                            help info\n                                        ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Estimated Rate Increase\n                                            help info')"
+    },
+    {
+      "tag": "a",
+      "text": "See details",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('See details')"
+    },
+    {
+      "tag": "a",
+      "text": "\n                                                Close details\n                                            ",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Close details')"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "Manage My Account",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Manage My Account')"
+    },
+    {
+      "tag": "a",
+      "text": "Sign Up For MMA",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sign Up For MMA')"
+    },
+    {
+      "tag": "a",
+      "text": "My Home Billing Acct",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Home Billing Acct')"
+    },
+    {
+      "tag": "a",
+      "text": "Smart Grid",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Smart Grid')"
+    },
+    {
+      "tag": "a",
+      "text": "Outage Center",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Outage Center')"
+    },
+    {
+      "tag": "a",
+      "text": "My Home",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Home')"
+    },
+    {
+      "tag": "a",
+      "text": "Sustainable Tomorrow Energy Plan (STEP)",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sustainable Tomorrow Energy Plan (STEP)')"
+    },
+    {
+      "tag": "a",
+      "text": "Doing Business with Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Doing Business with Us')"
+    },
+    {
+      "tag": "a",
+      "text": "WiFi Thermostat Rewards",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('WiFi Thermostat Rewards')"
+    },
+    {
+      "tag": "a",
+      "text": "Solar",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Solar')"
+    },
+    {
+      "tag": "a",
+      "text": "Efficiency Programs",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Efficiency Programs')"
+    },
+    {
+      "tag": "a",
+      "text": "My Business",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "Construction & Renovation",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Construction & Renovation')"
+    },
+    {
+      "tag": "a",
+      "text": "Sustainable Tomorrow Energy Plan (STEP)",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Sustainable Tomorrow Energy Plan (STEP)')"
+    },
+    {
+      "tag": "a",
+      "text": "Request Services for My Business",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Request Services for My Business')"
+    },
+    {
+      "tag": "a",
+      "text": "Commercial Demand Response",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Commercial Demand Response')"
+    },
+    {
+      "tag": "a",
+      "text": "About CPS Energy",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('About CPS Energy')"
+    },
+    {
+      "tag": "a",
+      "text": "Our History",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Our History')"
+    },
+    {
+      "tag": "a",
+      "text": "Community",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Community')"
+    },
+    {
+      "tag": "a",
+      "text": "Agency Partner Portal",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Agency Partner Portal')"
+    },
+    {
+      "tag": "a",
+      "text": "Work With Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Work With Us')"
+    },
+    {
+      "tag": "a",
+      "text": "Newsroom",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Newsroom')"
+    },
+    {
+      "tag": "a",
+      "text": "Contact Us",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Contact Us')"
+    },
+    {
+      "tag": "a",
+      "text": "Schedule a callback",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Schedule a callback')"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "Privacy Policy",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Privacy Policy')"
+    },
+    {
+      "tag": "a",
+      "text": "Accessibility",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Accessibility')"
+    },
+    {
+      "tag": "a",
+      "text": "Employee Access",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": "getByText('Employee Access')"
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "id": null,
+      "role": null,
+      "ariaLabel": null,
+      "testId": null,
+      "recommendedLocator": null
+    }
+  ]
+}
