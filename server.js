@@ -382,6 +382,7 @@ app.post("/generate-scripts", async (req, res) => {
         console.log(
           `Generating script for ${test.name}`
         );
+        const locatorCatalog = [];
 
         const generated =
   await generatePlaywrightScript(
