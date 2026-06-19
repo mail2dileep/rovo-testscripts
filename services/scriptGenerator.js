@@ -1,9 +1,16 @@
-const OpenAI = require("openai");
+const {
+  GoogleGenerativeAI
+} = require("@google/generative-ai");
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
-
+const genAI =
+  new GoogleGenerativeAI(
+    process.env.GEMINI_API_KEY
+  );
+if (!process.env.GEMINI_API_KEY) {
+  throw new Error(
+    "GEMINI_API_KEY not configured"
+  );
+}
 
 
 function buildPrompt(test, locatorCatalog) {
@@ -197,24 +204,16 @@ async function generatePlaywrightScript(testCase,locatorCatalog) {
   const prompt = buildPrompt(testCase,locatorCatalog);
 try {
 
-  const response =
-    await client.chat.completions.create({
-      model: "gpt-5",
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are a senior Playwright automation engineer."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ]
-    });
+  const model =
+  genAI.getGenerativeModel({
+    model: "gemini-2.5-flash"
+  });
+
+const result =
+  await model.generateContent(prompt);
 
 const content =
-  response.choices[0].message.content;
+  result.response.text();
 
 let parsed;
 
@@ -285,7 +284,7 @@ if (
 
 }
 if (
-  !parsed.pageObjectContent.includes("class")
+  !parsed.pageObjectContent.includes("export class")
 ) {
   throw new Error(
     "Invalid Page Object generated"
@@ -303,10 +302,10 @@ return parsed;
 
 } catch (error) {
 
-  console.error(
-    "OpenAI Error:",
-    error.response?.data || error.message
-  );
+ console.error(
+  "Gemini Error:",
+  error.message
+);
 
   throw error;
 }
