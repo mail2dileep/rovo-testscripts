@@ -183,6 +183,12 @@ LOCATOR RULES
   to identify the correct element.
 - When multiple matching locators exist, choose the locator with the lowest locatorPriority value.
 - Prefer stable locators over text-based locators.
+- NEVER generate:
+page.locator('a[href=...]')
+page.locator('.class')
+page.locator('[attribute=value]')
+
+unless the exact locator appears in recommendedLocator.
 
 LOCATOR PREFERENCE ORDER
 
