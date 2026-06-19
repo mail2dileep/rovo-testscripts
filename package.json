@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@google/genai": "^2.8.0",
+    "@google/generative-ai": "^0.24.1",
     "axios": "^1.18.0",
     "cjs": "^0.0.11",
     "crypto": "^1.0.1",
