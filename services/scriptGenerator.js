@@ -41,13 +41,23 @@ const filteredLocators =
     (a.locatorPriority || 99) -
     (b.locatorPriority || 99)
 )
-.slice(0, 300);
+.slice(0, 100);
 
+  const uniqueLocators =
+  filteredLocators.filter(
+    (locator, index, self) =>
+      index === self.findIndex(
+        item =>
+          item.recommendedLocator ===
+          locator.recommendedLocator
+      )
+  );
    const promptLocators =
-  filteredLocators.map(el => ({
+  uniqueLocators.map(el => ({
     tag: el.tag,
     text: el.text,
     label: el.label,
+    disabled: el.disabled,  
     inputType: el.inputType,
     radioGroup: el.radioGroup,
     options: el.options,
@@ -59,12 +69,16 @@ const filteredLocators =
     href: el.href,
     recommendedLocator:
       el.recommendedLocator,
+      parentContainer:el.parentContainer,
     locatorPriority:
       el.locatorPriority,
-      displayName:
+    displayName:
   el.label ||
   el.text ||
-  el.ariaLabel
+  el.ariaLabel ||
+  el.placeholder ||
+  el.id
+  
   }));
 
   let prompt = `
@@ -188,7 +202,19 @@ page.locator('a[href=...]')
 page.locator('.class')
 page.locator('[attribute=value]')
 
-unless the exact locator appears in recommendedLocator.
+- Respect enabled and disabled metadata.
+- Do not generate toBeEnabled() assertions for elements where disabled=true.
+- Do not interact with disabled elements unless a prior step explicitly enables them.
+- All locators belong to the parentContainer specified in the Locator Catalog.
+- Do not generate locators outside the specified parentContainer.
+- For this application, only use elements inside calculator_current.
+- Ignore locators whose displayName is empty.
+- Ignore duplicate locators that reference the same recommendedLocator.
+- Prefer business controls over decorative elements.
+- Do not generate tests for labels, options, or static text unless explicitly referenced in the test step.
+- Ignore locators where recommendedLocator is null.
+- Generate locators only from recommendedLocator.
+- Do not infer alternative selectors from displayName.
 
 LOCATOR PREFERENCE ORDER
 
@@ -220,6 +246,8 @@ DROPDOWN RULES
 
 - Use available options metadata when generating selectOption() actions.
 - Generate business-oriented methods instead of generic select methods.
+- If disabled=true, do not generate selectOption() actions.
+- If currentValue exists, use it when generating verification steps.
 
 LINK RULES
 
@@ -256,6 +284,10 @@ POM ENFORCEMENT
 - Every Page Object method must return Promise<void> unless a value is explicitly required.
 - Use async/await for all Playwright interactions.
 - Page Object constructor must accept Page from Playwright.
+- Never create Playwright locators directly from text, id, role, ariaLabel, href or other metadata.
+- Use only recommendedLocator from Locator Catalog.
+- If recommendedLocator is missing, add:
+// TODO: Locator not found in catalog
 
 
 Requirement ID:
@@ -319,20 +351,30 @@ try {
     .replace(/```/g, "")
     .trim();
 
-const jsonMatch =
-  cleanedContent.match(
-    /\{[\s\S]*\}/
-  );
+const firstBrace =
+  cleanedContent.indexOf("{");
 
-if (!jsonMatch) {
+const lastBrace =
+  cleanedContent.lastIndexOf("}");
+
+if (
+  firstBrace === -1 ||
+  lastBrace === -1
+) {
   throw new Error(
     "No JSON object returned"
   );
 }
 
 parsed =
-  JSON.parse(jsonMatch[0]);
-  parsed.pageObjectFileName =
+  JSON.parse(
+    cleanedContent.substring(
+      firstBrace,
+      lastBrace + 1
+    )
+  );
+
+parsed.pageObjectFileName =
   parsed.pageObjectFileName?.trim();
 
 parsed.testFileName =
