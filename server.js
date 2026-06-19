@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+const fs = require("fs");
+const path = require("path");
 const axios = require("axios");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
@@ -382,8 +384,47 @@ app.post("/generate-scripts", async (req, res) => {
         console.log(
           `Generating script for ${test.name}`
         );
-        const locatorCatalog = [];
+        const locatorFile =
+  path.join(
+    __dirname,
+    "locators",
+    "locators.json"
+  );
 
+let locatorCatalog = [];
+
+try {
+
+  locatorCatalog =
+    JSON.parse(
+      fs.readFileSync(
+        locatorFile,
+        "utf8"
+      )
+    );
+
+  console.log(
+    `Loaded ${
+      locatorCatalog.elements?.length ||
+      locatorCatalog.length ||
+      0
+    } locators`
+  );
+
+} catch(error) {
+
+  console.error(
+    "Failed to load locators.json",
+    error.message
+  );
+
+}
+console.log(
+  "Locator count:",
+  locatorCatalog.elements?.length ||
+  locatorCatalog.length ||
+  0
+);
         const generated =
   await generatePlaywrightScript(
   test,
