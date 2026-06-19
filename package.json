@@ -19,6 +19,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
+    "jsonrepair": "^3.14.0",
     "jsonwebtoken": "^9.0.3",
     "moment": "^2.30.1",
     "openai": "^6.42.0",

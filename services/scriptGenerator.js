@@ -1,7 +1,8 @@
 const {
   GoogleGenerativeAI
 } = require("@google/generative-ai");
-
+const { jsonrepair } =
+  require("jsonrepair");
 const genAI =
   new GoogleGenerativeAI(
     process.env.GEMINI_API_KEY
@@ -121,6 +122,14 @@ tests/generated/
   <TestName>.spec.ts
 
 Return ONLY valid JSON.
+
+JSON ESCAPING REQUIREMENTS
+
+- Escape all double quotes inside code strings.
+- Escape all backslashes as \\\\
+- pageObjectContent must be a valid JSON string.
+- testFileContent must be a valid JSON string.
+- Never output raw TypeScript outside JSON.
 
 Response Format:
 
@@ -351,28 +360,29 @@ try {
     .replace(/```/g, "")
     .trim();
 
-const firstBrace =
-  cleanedContent.indexOf("{");
+const jsonMatch =
+  cleanedContent.match(
+    /\{[\s\S]*\}$/
+  );
 
-const lastBrace =
-  cleanedContent.lastIndexOf("}");
-
-if (
-  firstBrace === -1 ||
-  lastBrace === -1
-) {
+if (!jsonMatch) {
   throw new Error(
     "No JSON object returned"
   );
 }
 
+const rawJson =
+  jsonMatch[0];
+console.log(
+  "Raw Gemini JSON:"
+);
+
+console.log(rawJson);
+const repairedJson =
+  jsonrepair(rawJson);
+
 parsed =
-  JSON.parse(
-    cleanedContent.substring(
-      firstBrace,
-      lastBrace + 1
-    )
-  );
+  JSON.parse(repairedJson);
 
 parsed.pageObjectFileName =
   parsed.pageObjectFileName?.trim();
