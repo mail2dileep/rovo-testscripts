@@ -344,83 +344,89 @@ try {
     model: "gemini-2.5-flash"
   });
 
-const result =
-  await model.generateContent(prompt);
+let content = null;
+let parsed = null;
 
-const content =
-  result.response.text();
-
-let parsed;
-
-try {
-
-  const cleanedContent =
-  content
-    .replace(/```json/g, "")
-    .replace(/```/g, "")
-    .trim();
-
-const jsonMatch =
-  cleanedContent.match(
-    /\{[\s\S]*\}$/
-  );
-
-if (!jsonMatch) {
-  throw new Error(
-    "No JSON object returned"
-  );
-}
-
-const rawJson =
-  jsonMatch[0];
-console.log(
-  "Raw Gemini JSON:"
-);
-
-console.log(rawJson);
-const repairedJson =
-  jsonrepair(rawJson);
-
-parsed =
-  JSON.parse(repairedJson);
-
-parsed.pageObjectFileName =
-  parsed.pageObjectFileName?.trim();
-
-parsed.testFileName =
-  parsed.testFileName?.trim();
-
-  parsed.pageObjectContent =
-  parsed.pageObjectContent?.trim();
-
-parsed.testFileContent =
-  parsed.testFileContent?.trim();
-
-} catch(error) {
-
-  console.error(
-    "Invalid JSON returned by GPT:"
-  );
-
-  console.error(content);
-
-  throw error;
-
-}
-
-if (
-  !parsed.pageObjectFileName ||
-  !parsed.pageObjectContent ||
-  !parsed.testFileName ||
-  !parsed.testFileContent
+for (
+  let attempt = 1;
+  attempt <= 3;
+  attempt++
 ) {
 
+  try {
+
+    console.log(
+      `Gemini attempt ${attempt}`
+    );
+
+    const result =
+      await model.generateContent(
+        prompt
+      );
+
+    content =
+      result.response.text();
+
+    const cleanedContent =
+      content
+        .replace(/```json/g, "")
+        .replace(/```/g, "")
+        .trim();
+
+    const jsonMatch =
+      cleanedContent.match(
+        /\{[\s\S]*\}$/
+      );
+
+    if (!jsonMatch) {
+      throw new Error(
+        "No JSON object returned"
+      );
+    }
+
+    parsed =
+      JSON.parse(
+        jsonrepair(jsonMatch[0])
+      );
+
+    if (
+      parsed.pageObjectFileName &&
+      parsed.pageObjectContent &&
+      parsed.testFileName &&
+      parsed.testFileContent
+    ) {
+
+      console.log(
+        "Complete POM response received"
+      );
+
+      break;
+
+    }
+
+    throw new Error(
+      "Incomplete POM response"
+    );
+
+  } catch (err) {
+
+    console.log(
+      `Attempt ${attempt} failed`
+    );
+    console.log(content);
+    if (attempt === 3) {
+      throw err;
+    }
+
+  }
+}
+if (!parsed) {
+
   throw new Error(
-    "Incomplete POM response from GPT"
+    "No valid response returned after 3 attempts"
   );
 
 }
-
 if (
   !parsed.pageObjectFileName.endsWith("Page.ts")
 ) {
@@ -484,6 +490,7 @@ return parsed;
   throw error;
 }
 }
+
 
 module.exports = {
   generatePlaywrightScript
